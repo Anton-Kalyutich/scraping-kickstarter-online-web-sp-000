@@ -19,10 +19,6 @@ end
 
 create_project_hash
 
-#image: 
-
-#description: 
-
 #location: project.css("span.location-name").text
 
 #percentage: project.css("ul.project-stats li.first.funded strong").text.gsub("%", "").to_i
