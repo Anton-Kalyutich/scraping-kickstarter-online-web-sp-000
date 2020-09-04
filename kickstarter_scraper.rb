@@ -10,7 +10,8 @@ def create_project_hash
     title = project.css("h2.bbcard_name strong a").text
     projects[title.to_sym] = {
       :image_link => project.css("div.project-thumbnail a img").attribute("src").value,
-      :description => 
+      :description => project.css("p.bbcard_blurb").text,
+      
     }
   end
   projects
@@ -20,7 +21,7 @@ create_project_hash
 
 #image: 
 
-#description: project.css("p.bbcard_blurb").text
+#description: 
 
 #location: project.css("span.location-name").text
 
